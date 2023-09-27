@@ -195,11 +195,46 @@
     justify-content: center;
     height: 30px;
     font-size: 30px;
-    
-    
+  
+ }
+
+ .ticle_home {
+
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    font-size: 50px;
+ }
+
+ .text_home {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 30px;
+ }
+
+ .from_home {
+    display: flex;
+    justify-content: center;
+ }
+
+ .starch_home {
+    border-radius: 0.7em;
+    width: 300px;
+    height: 40px;
+    background-color: #edf0f5;
+    margin-top: 20px;
  }
   
-  
+ .home_btn {
+    background-color: #1479fb;
+    border-radius: 0.7em;
+    width: 80px;
+    height: 40px;
+    color: white;
+    margin-top: 20px;
+ } 
   
   
   

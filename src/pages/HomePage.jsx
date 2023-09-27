@@ -28,12 +28,12 @@ const HomePage = () => {
   
 
   return (
-    <div>Pokemen
-        <h2>Hi Trainer!</h2>
-        <p> To staar, plase, enter your trainer name</p>
-        <form onSubmit={hadletTrainer}>
-          <input ref={inputTrainer}type="texto" />
-          <button>Star</button>
+    <div>
+        <h2 className='ticle_home'>Hi Trainer!</h2>
+        <p className='text_home'> To staar, plase, enter your trainer name</p>
+        <form  className='from_home'   onSubmit={hadletTrainer}>
+          <input className='starch_home' ref={inputTrainer}type="texto" />
+          <button className='home_btn' >Search</button>
           
 
         </form>
