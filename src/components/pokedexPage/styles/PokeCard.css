@@ -1,0 +1,213 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+    
+  
+  
+  
+  .pokecard {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 0.7em;
+      border: 0.7em solid #ccc;
+      cursor: pointer;
+      transition: transform 150ms ease;
+      
+      
+      
+  
+      
+  }
+  
+  .pokecard:hover {
+      transform: scale(1.03);
+  
+  }
+  
+  .pokecard__header {
+      background-color: #999;
+      aspect-ratio: 2;
+      position: relative;
+  }
+  
+  .pokecard__image {
+      position: absolute;
+      width: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 1.5em;
+  }
+  
+  .pokecard__body {
+      padding: 3.5em 1em 2em;
+  }
+  
+  .pokecard__name {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.6em;
+      font-weight: 400;
+      margin-bottom: 0.2em;
+  }
+  
+  .pokecard__types{
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin-bottom: 1em;
+  }
+  
+  .pokecard__typename {
+      text-transform: capitalize;
+  }
+  .pokecard__typename:nth-child(2)::before {
+         content: '/';
+         padding-right: 0.7em;
+  }
+  .pokecard__hr {
+      margin-bottom: 1em;
+      border: 1px solid #ccc4;
+  }
+  
+  .pokecard__stats {
+      display: grid;
+      grid-template-columns:  repeat(3, 1fr);
+      justify-items: center;
+      gap: 1.5em 0.2em;
+  }
+  
+  .pokecard__stat {
+      display: grid;
+      gap: 0.5em;
+      justify-items: center;
+  
+  }
+  .pokecard__stat__name {
+      font-size: 0.6em;
+      font-weight: 300;
+      text-transform: uppercase;
+  }
+  
+  .pokecard__stat__value {
+      font-weight: 500;
+      font-size: 1rem;
+  }
+  
+  .fire-gradient {
+      background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #e8ae1b 125.72%);
+  }
+  
+  .grass-gradient {
+      background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+      
+  }
+  
+  .water-gradient {
+      background: linear-gradient(179.57deg, #133258 -70.14%, #1479fb 56.16%, #82b2f1 214.85%);
+  }
+  
+  .bug-gradient {
+      background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+  }
+  
+  
+  .normal-gradient {
+      background: linear-gradient(181.51deg, #735259 -6.44%, #BC6B7C 121.95%, #7C3F4C 186.11%);
+  }
+  
+  
+  .fire-border {
+      border-color: #ce5f1a;
+  }
+  
+  .fire-color {
+      color: #ce5f1a;
+  }
+  
+  .grass-border {
+      border-color: #85e7ab;
+  }
+  
+  .grass-color {
+      color: #69e6bc;
+  }
+  
+  .water-border {
+      border-color: #5ec8f6;
+  }
+  
+  .water-color {
+      color: #34c5e1;
+  }
+  
+  .bug-border {
+      border-color: #45cf9c;
+  }
+  
+  .bug-color {
+      color: #2cdcaa;
+  }
+  
+  .normal-border {
+      border-color: #ea5f7d;
+  }
+  
+  .normal-color {
+      color: #ee6582;
+  }
+
+  .buscador {
+    border-radius: 0.7em;
+    width: 300px;
+    height: 40px;
+    background-color: #edf0f5;
+    margin-top: 20px;
+ }
+ 
+ .buscador__bnt {
+    background-color: #1479fb;
+    border-radius: 0.7em;
+    width: 80px;
+    height: 40px;
+    color: white;
+    margin-top: 20px;
+    
+ }
+
+ .claseform {
+    display: flex;
+    justify-content: center;
+ }
+
+ .selectopcion {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+     
+ }
+
+ .tituloPricipal {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    font-size: 30px;
+    
+    
+ }
+  
+  
+  
+  
+  
+   
+  
+  
+  
+
+ 
+
+
