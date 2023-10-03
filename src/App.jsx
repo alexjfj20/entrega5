@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div>
-       <h1>Pokemon</h1>
+       
 
        <Routes>
          <Route path='/' element={<HomePage />} />

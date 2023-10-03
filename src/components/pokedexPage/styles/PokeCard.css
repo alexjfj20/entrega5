@@ -4,6 +4,8 @@
     gap: 10px 20px;
     justify-content: center;
     margin-top: 20px;
+   
+    
   }
     
   
@@ -13,13 +15,10 @@
       width: 100%;
       max-width: 350px;
       border-radius: 0.7em;
-      border: 0.7em solid #ccc;
+      border: 0.7em solid #e4e2e2;
       cursor: pointer;
       transition: transform 150ms ease;
-      
-      
-      
-  
+     
       
   }
   
@@ -41,10 +40,82 @@
       transform: translateX(-50%);
       top: 1.5em;
   }
-  
-  .pokecard__body {
-      padding: 3.5em 1em 2em;
+
+  .logo_App {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /*border: 5px solid black; */
+    border-radius: 20px;
+   /* box-shadow: 5px 5px 10px grey; */
+    margin: auto;
+    margin-top: 50px;
   }
+  
+  .logo_App img {
+    max-width: 100%;
+    height: auto;
+   
+  }
+
+  .ticle_home {
+    margin-top: 50px;
+
+  }
+
+  html, body {
+    margin: 10px;
+    height: 100%;
+  }
+
+  .content {
+    min-height: calc(100% - 150px); /* Ajusta '150px' según la altura de tu footer */
+    /* ... otros estilos que necesites ... */
+  }
+  
+  .logo-piepage {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    margin-top: 140px;
+    
+
+  }
+
+  .logo_cabecera2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 20px;
+    margin: auto;
+    
+  }
+
+ .logo-piepage img {
+    max-width: 300%;
+    height: auto;
+
+  }
+
+  .tituloPricipal {
+    margin-top: 50px;
+
+  }
+
+
   
   .pokecard__name {
       text-align: center;
@@ -173,7 +244,7 @@
     border-radius: 0.7em;
     width: 80px;
     height: 40px;
-    color: white;
+    color: rgb(246, 246, 246);
     margin-top: 20px;
     
  }
@@ -235,14 +306,239 @@
     color: white;
     margin-top: 20px;
  } 
-  
-  
-  
+
+/* .active {
+    background-color: blue;
+    color: white;
+    border-radius: 0.7em;
+    width: 30px;
+
+}*/
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
    
+  }
   
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    width: 420px;
+    height: 40px;
+    margin-bottom: 30px; /* Agrega espacio por debajo del cuadro de paginación */
+       
+  }
+
+
+  .pagination button {
+    background-color: #ffffff;
+    height: 20px;
+    text-align: center;
+    color: #0b0a0a;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+   
+  }
+ 
+  .pagination button:hover {
+    background-color: #ee0909;
+    border-radius: 0.7em;
+    transform: scale(1.03); 
+    outline: none;
+    border: none;
+    cursor: pointer;
+   
+    
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio entre el contenido principal y el cuadro de paginación */
+   
+  } 
+  
+  
+ .pokedata__header {
+    width: 600px;
+    height: 100px;
+    background-color: #3498db;
+    border: 2px solid #e74c3c;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+  
+  .pokedata__img {
+    max-width: 50%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-height: 50%; /* Asegura que la imagen no exceda la altura del contenedor */
+    display: block; /* Elimina cualquier espacio extra debajo de la imagen */
+    margin: auto;
+  }
+
+  .pokedata__nameid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    
+  }
+
+  
+  .pokedata__body {
+    display: flex;
+    flex-direction: column; /* Establece la dirección de flexión en columna */
+    justify-content: center; /* Centra verticalmente su contenido */
+    align-items: center; /* Centra horizontalmente su contenido */
+    border: 2px solid #e74c3c;
+    padding: 20px;
+    width: 600px;
+    margin-top: -20px;
+   /* text-align: center; */
+  }
+  
+  
+  .pokedata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centra verticalmente en la pantalla completa */
+  }
   
   
 
+  .pokedata__nameid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btns__id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+  
+  .pokedata__headerinfo {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .pokedata__nameid  {
+    /* Estilos de .pokedata__nameid */
+    margin-bottom: 30px; /* Espacio entre .pokedata__nameid y .pokedata__weight */
+    font-size: 30px;
+    gap: 20px;
+    
+  }
+
+
+
+  .pokedata__weight {
+    /* Estilos de .pokedata__weight */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos internos */
+    font-size: 20;
+    font-weight: normal;
+    margin-top: 10px;
+
+  }
+  
+  .pokedata__item {
+    /* Estilos de .pokedata__item */
+    margin-right: 5px; /* Espacio entre el texto y el número de peso */
+    font-weight:bold;
+    
+  }
+  
+  .pokedata__headerinfo {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Centra el texto horizontalmente */
+  }
+  
+  .pokedata__nameid {
+    /* Estilos de .pokedata__nameid */
+    margin-bottom: 10px; /* Espacio entre .pokedata__nameid y .pokedata__weight */
+  }
+  
+  .pokedata__height {
+    /* Estilos de .pokedata__weight */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos internos */
+  }
+  
+  .pokedata__item {
+    /* Estilos de .pokedata__item */
+    margin-right: 5px; /* Espacio entre el texto y el número de peso */
+  }
+
+  .texto-con-espacio {
+    line-height: 2.5; /* Ajusta el valor según la separación deseada */
+  }
+
+  .pokedata__nameid  {
+    /* Estilos de .pokedata__nameid */
+    margin-bottom: 10px; /* Espacio entre .pokedata__nameid y .pokedata__weight */
+   
+  }
+  
+  .pokedata__type  {
+    /* Estilos de .pokedata__weight */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos internos */
+   
+  }
+
+  
+  .pokedata__item {
+    /* Estilos de .pokedata__item */
+    margin-right: 5px; /* Espacio entre el texto y el número de peso */
+  }
+
+  .pokedata__typeinfo {
+    /* Estilos de .pokedata__item */
+    margin-right: 5px; /* Espacio entre el texto y el número de peso */
+  }
+
+
+  .pokedata__nameid {
+    /* Estilos de .pokedata__nameid */
+    margin-bottom: 10px; /* Espacio entre .pokedata__nameid y .pokedata__weight */
+  }
+  
+  .pokedata__abilities {
+    /* Estilos de .pokedata__weight */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos internos */
+  }
+  
+  .pokedata__item {
+    /* Estilos de .pokedata__item */
+    margin-right: 5px; /* Espacio entre el texto y el número de peso */
+  }
+
+  .pokedata__abilityinfo {
+    /* Estilos de .pokedata__item */
+    margin-right: 5px; /* Espacio entre el texto y el número de peso */
+  }
+
+
+  
+
+  
  
 
 

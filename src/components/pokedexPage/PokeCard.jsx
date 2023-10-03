@@ -9,7 +9,7 @@ const PokeCard = ({ url }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    getPokemon();
+     getPokemon();
   }, []);
 
   const hadleNavigete = () => {

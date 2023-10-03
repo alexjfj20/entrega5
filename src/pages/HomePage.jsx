@@ -29,6 +29,11 @@ const HomePage = () => {
 
   return (
     <div>
+       <div>
+        <header className='logo_App' >
+          <img src="/img/logo.jpg" alt="" />
+        </header>
+        </div>
         <h2 className='ticle_home'>Hi Trainer!</h2>
         <p className='text_home'> To staar, plase, enter your trainer name</p>
         <form  className='from_home'   onSubmit={hadletTrainer}>
@@ -37,6 +42,14 @@ const HomePage = () => {
           
 
         </form>
+        
+        <div>
+
+        <footer className='logo-piepage'>
+        <img src="/img/logo-piepagina.png" alt="" />
+        </footer>
+
+       </div>
     </div>
 
   )
