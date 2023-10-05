@@ -1,7 +1,8 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import Pagination from "./Pagination";
+
 
 
 
@@ -53,7 +54,18 @@ const PokedexidPage = () => {
   const weight = pokemons?.weight ? (pokemons.weight * 0.1).toFixed(1) : "";
   const height = pokemons?.height ? (pokemons.height * 0.1).toFixed(1) : "";
 
-  
+  const navigate = useNavigate();
+  const navigatenext = useNavigate();
+
+
+  const handleBack = () => {
+    navigate("/pokedex");
+  };
+
+  const handleNext = () => {
+    navigatenext(1);
+  };
+
 
 
   return (
@@ -91,7 +103,7 @@ const PokedexidPage = () => {
           <section className="pokedata__body">
             <div className="pokedata__headerinfo">
               <div className="pokedata__nameid  texto-separado">
-                <button className="btns__id" onClick={handlePageChange}>
+                <button className="btns__id" onClick={handleBack}>
                   ←
                 </button>
                 <h3
@@ -104,7 +116,7 @@ const PokedexidPage = () => {
                 >
                   #{pokemons?.id}
                 </h4>
-                <button className="btns__id" onClick={handlePageChange}>
+                <button className="btns__id" onClick={handleNext}>
                   →
                 </button>
               </div>
